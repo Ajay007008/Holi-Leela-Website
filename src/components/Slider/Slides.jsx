@@ -35,11 +35,18 @@ function App() {
   };
 
   return (
-    <div className='max-w-[1100px] h-[680px] w-full m-auto py-16 px-4 relative group'>
+    <section id="slides">
+    <div className='max-w-[1100px] h-[680px] w-full m-auto py-16 px-4 relative group '>
      
-     {/* Making Slider Responsive */}
-      <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='w-full h-full rounded-2xl bg-center bg-cover duration-500  shadow-black/30'></div>
+     {/* Adding image in Slider and maaking Slider Responsive */}
+      <div 
+         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+         
+         className='w-full h-full rounded-2xl bg-center 
+          bg-cover duration-500  shadow-black/30
+            sm:bg-contain sm:bg-no-repeat sm:bg-center'>
+              
+       </div>
      
      
       {/* Left Arrow */}
@@ -63,6 +70,7 @@ function App() {
         ))}
       </div>
     </div>
+    </section>
   );
 }
 

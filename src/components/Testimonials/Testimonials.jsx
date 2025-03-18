@@ -5,7 +5,9 @@ import { motion } from 'framer-motion';
 import { FadeUp } from "../../utility/animation";
 const Testimonials = () => {
   return (
-    <section>
+    
+
+    <section id="testimonials">
         <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-o py-0">
             
             {/* Testimonials Image */}

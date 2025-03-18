@@ -6,7 +6,21 @@ import { motion } from 'framer-motion'
 import { FadeRight } from '../../utility/animation'
 
 
+
+// Added React Router navigation so when user clicks on Shop Now, it will take to Menu Section
+import { useNavigate } from 'react-router-dom';
+
+
+
 const Hero = () => {
+ 
+   // Initialize navigation
+   const navigate = useNavigate(); 
+   const handleShopNowClick = () => {
+      navigate('/menu'); // Navigate to the menu page
+    };
+
+
   return <section>
      <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
 
@@ -44,8 +58,8 @@ const Hero = () => {
                     initial="hidden"
                     animate="visible"    
              className="flex justify-center md:justify-start">
-             <button className="primary-btn flex items-center gap-2">
-               <span><IoBagHandleOutline/></span>Order Now</button>
+             <button className="primary-btn flex items-center gap-2"  onClick={handleShopNowClick} >
+               <span><IoBagHandleOutline/></span>Shop Now</button>
         </motion.div>
         
         </div>

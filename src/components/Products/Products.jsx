@@ -100,9 +100,9 @@ const MenusData = [
 
 
 
-const Menus = () => {
+const Menus = ( { setCartCount } ) => {
   return(
-    <section>
+    <section id="products">
          <div className="container pt-12 pb-20">
     
             {/* Added Animation to menu h1 */}
@@ -134,7 +134,8 @@ const Menus = () => {
                       {/*Added flex container for price and button */}  
                       <div className="flex items-center gap-2"> 
                       <p className="text-lg font-semibold text-secondary">{menu.price}</p>   
-                      <button className="text-sm px-2 py-1 bg-primary text-white rounded-md hover:bg-secondary transition">Buy Now</button> 
+                      <button onClick={() => setCartCount((prev) => prev + 1)}
+                          className="text-sm px-2 py-1 bg-primary text-white rounded-md hover:bg-secondary transition">Buy Now</button> 
                       </div>
                     
                       
