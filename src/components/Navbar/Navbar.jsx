@@ -8,7 +8,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 
 
-import { MdMenu, MdOutlineShoppingCart } from "react-icons/md";
+import {  MdOutlineShoppingCart } from "react-icons/md";
 import ResponsiveMenu from './ResponsiveMenu';
 
 import { motion } from 'framer-motion';
@@ -25,7 +25,7 @@ const Navbar = ({ cartCount }) => {
    const[open,setOpen] = React.useState(false);
   return (
     <>
-    <nav>
+    <nav className="fixed top-0 left-0 w-full bg-white  z-50">
       <motion.div 
            initial={{ opacity: 0}}
            animate={{ opacity: 1}}
