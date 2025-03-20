@@ -102,7 +102,8 @@ const MenusData = [
 
 const Menus = ( { setCartCount } ) => {
   return(
-    <section id="products">
+<section id="products" className="pt-24">
+
          <div className="container pt-12 pb-20">
     
             {/* Added Animation to menu h1 */}
@@ -110,7 +111,7 @@ const Menus = ( { setCartCount } ) => {
                 initial={{ opacity: 0, x: -200 }}
                 whileInView={{ opacity: 1, x: 0}}
                 transition={{ duration: 1, delay: 0.3 }} 
-               className="text-2xl font-bold text-left pb-10 uppercase">Our Menu</motion.h1>
+               className="text-2xl font-bold text-left pb-10 uppercase">Products</motion.h1>
               
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {MenusData.map((menu) => (

@@ -8,7 +8,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 
 
-import {  MdOutlineShoppingCart } from "react-icons/md";
+import { MdMenu, MdOutlineShoppingCart } from "react-icons/md";
 import ResponsiveMenu from './ResponsiveMenu';
 
 import { motion } from 'framer-motion';
